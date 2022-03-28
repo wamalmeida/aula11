@@ -1,0 +1,85 @@
+CRIE UM PROGRAMA QUE:
+Aprove um empréstimo para a compra de uma casa, o programa irá ler 3 valores, sendo eles: valor da casa, salario, quantos anos para pagar.
+Em seguida o programa irá calcular o valor da mensalidade e dirá se o emprestimo foi ou não aceito. A única regra para o empréstimo ser aceito é: A parcela de ser
+igual ou menor a 30% do salario.
+
+RESPOSTA:
+print("\33[1;40mEste é um programa para calcular um empréstimo!\33[m")
+valorCasa = float(input("Qual o valor da casa? R$"))
+valorSalario = flaot(input("Qual o valor do salario? R$"))
+tempoPagamento = int(input('Em quanto anos você pretende pagar? '))
+tempoPagamento = tempoPagamento * 24
+valorMensalidade = valorCasa / tempoPagamento
+porcentoSalario = (valorSalario/100) * 30
+
+print("Você pretende comprar uma casa no valor de R${} pagando em {} parcelas mensais, com isto\n"
+      "o valor da mensalidade será de R${:.2f}. Visto que seu salário é R${} o informamos que:".format(valorCasa,tempoPagamento, valorMensalidade, valorSalario))
+if valorMensalidade <= porcentoSalario:
+    print("É possível realizar o impréstimo!\n"
+          "\33[30;42mParabéns! Você está de casa nova!\33[m")
+else:
+    print("\33[31mLamentamos informar que não é possível realizar o empréstimo, pois\n"
+          "o valor da mensalidade ultrapassa 30% do valor de seu salário!\33[m")
+
+
+CRIE UM PROGRAMA QUE:
+Leia 2 valores e identifique se há algum numero maior ou se são iguais.
+
+RESPOSTA:
+print("\33[30mEste é um programa que ira comparar números!\33[m")
+num1 = int(input("Digite um primeiro valor qualquer: "))
+num2 = int(input("Digite um segundo valor qualquer: "))
+if num1 < num2:
+    print("\33[33mO primeiro valor é \33[31mmenor \33[33mque o segundo\33[m")
+elif num1 > num2:
+    print('\33[33mO primeiro valor é \33[31mmaior\33[33m que o segundo valor\33[m')
+else:
+    print('Os 2 valor são iguais!')
+    
+
+
+
+CRIE UM PROGRAMA QUE:
+Pergunte em que ano de um jovem brasileiro e então diga se ele precisa se alistar no exercito.
+
+RESPOSTA:
+print("Este é um programa que te informará quanto tempo falta para seu alistamento!\n"
+      "Todo homem nascido em solo brasileiro necessita se alistar ao exercito brasileiro.")
+dataNascimento = int(input("Em que ano você nasceu? "))
+ano = (2022 - dataNascimento)
+if ano < 17:
+      print("Ainda faltam {} anos para você se alistar!".format(17 - ano))
+elif ano == 17:
+      print("Está na hora de você se alistar, Não perca o prazo de alistamento!")
+else:
+      print("Você foi descuidado e já passou {} anos do seu alistameto!\n"
+            "Corra para ajustar sua situação!".format(ano -17))
+           
+
+CRIE UM PROGRAMA QUE:
+Pergunte qual ano um atleta nasceu e com base na sua idade indique qual categoria da confederação ele se identifica.
+
+RESPOSTA:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
