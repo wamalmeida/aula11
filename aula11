@@ -57,12 +57,57 @@ else:
            
 
 CRIE UM PROGRAMA QUE:
-Pergunte qual ano um atleta nasceu e com base na sua idade indique qual categoria da confederação ele se identifica.
+Calcule o IMC de uma pessoa.
 
 RESPOSTA:
+print(" Este é um programa que calcula o IMC de uma pessoa!")
+print("Olá, bom dia!\n"
+      "Para calcular seu IMC precisaremos de duas informação:")
+peso = float(input("Qual o seu peso? "))
+altura = float(input("Qual sua altura? "))
+imc = peso / (altura * altura)
+print("O seu IMC hoje é: {}".format(imc))
+if imc < 18.5:
+    print("Você está abaixo do peso, considere aumentar a quantidade de caloria\n"
+          "que ingere diariamente para ter uma saude balanceada!")
+elif imc >= 18.5 and imc < 25:
+    print("Parabéns, o seu IMC está bom!")
+elif imc >= 25 and imc < 30:
+    print("Você está acima do peso, considere uma dieta para melhorar sua saúde!")
+elif imc >= 30 and imc <40:
+    print("Você está muito acima do peso, necessário uma dieta e exercícios fisicos\n"
+          "para melhorar sua saúde!")
+else:
+    print("Sua saúde está em risco! Você está classificado com obesidade mórbida!")
+    
+    
+CRIE UM PROGRAMA QUE:
+Calcule o valor parcelado de um produto.
 
-
-
+RESPOSTA:
+preço = float(input('Qual o preço do produto? R$'))
+desc = int(input('Qual o desconto a vista?'))
+preçoavista = preço - (preço * desc/100)
+numparcelas = int(input('Quantas parcelas deseja o pagamento ?'))
+parcela2 = preço/2 + (preço * 2/100)
+parcela3 = preço/3 + (preço * 3/100)
+parcela4 = preço/4 + (preço * 4/100)
+parcela5 = preço/5 + (preço * 5/100)
+parcela6 = preço/6 + (preço * 6/100)
+if numparcelas == 1:
+    print('O valor do produto é R${:.2f}, pagando a vista você recebe um desconto de {}% e pagará apenas R${:.2f}.'.format(preço,desc,preçoavista))
+elif numparcelas == 2:
+    print('O produto custa R${:.2f}, ou 2x de R${:.2f} no cartão.'.format(preço,parcela2))
+elif numparcelas == 3:
+    print('O produto custa R${:.2f}, ou 3x de R${:.2f} no cartão.'.format(preço, parcela3))
+elif numparcelas == 4:
+    print('O produto custa R${:.2f}, ou 4x de R${:.2f} no cartão.'.format(preço, parcela4))
+elif numparcelas == 5:
+    print('O produto custa R${:.2f}, ou 5x de R${:.2f} no cartão.'.format(preço, parcela5))
+elif numparcelas == 6:
+    print('O produto custa R${:.2f}, ou 6x de R${:.2f} no cartão.'.format(preço, parcela6))
+else:
+    print('O numero de parcelas está errado!')
 
 
 
