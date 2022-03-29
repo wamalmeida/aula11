@@ -8,7 +8,7 @@ print("\33[1;40mEste é um programa para calcular um empréstimo!\33[m")
 valorCasa = float(input("Qual o valor da casa? R$"))
 valorSalario = flaot(input("Qual o valor do salario? R$"))
 tempoPagamento = int(input('Em quanto anos você pretende pagar? '))
-tempoPagamento = tempoPagamento * 24
+tempoPagamento = tempoPagamento * 12
 valorMensalidade = valorCasa / tempoPagamento
 porcentoSalario = (valorSalario/100) * 30
 
