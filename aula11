@@ -111,20 +111,29 @@ else:
 
 
 
+CRIE UM JOGO DE JOKENPO:
 
+RESPOSTA:
+print("Este é um programa que joga jokenpô com você :D")
+escolha_jogador = int(input("""Boa dia jogador, digite o número de sua opção escolhida:
+      1 = Pedra
+      2 = Papel
+      3 = Tesoura
+      """))
+import random
+escolha_maquina = random.choice([1,2,3])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if escolha_jogador == escolha_maquina:
+    print("Houve empate! Jogue de novo!")
+elif escolha_jogador == 1 and escolha_maquina == 2:
+    print("Você escolheu PEDRA e a máquina escolheu PAPEL, A maquina venceu!")
+elif escolha_jogador == 1 and escolha_maquina == 3:
+    print("Você escolheu PEDRA e a maquina escolheu TESOURA,Você venceu!")
+elif escolha_jogador == 2 and escolha_maquina == 1:
+    print("Você escolheu PAPEL e a maquina escolheu PEDRA, Você Venceu!")
+elif escolha_jogador == 2 and escolha_maquina == 3:
+    print("Você escolheu PAPEL e a maquina escolheu TESOURA, Você perdeu!")
+elif escolha_jogador == 3 and escolha_maquina == 1:
+    print("Você escolheu TESOURA e a maquina escolheu PEDRA, Você perdeu!")
+else:
+    print("Você escolheu TESOURA e a maquina escolheu PAPEL, Você ganhou!")
